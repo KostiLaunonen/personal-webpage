@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kukkuluuruu!</title>
+	<meta charset="UTF-8">
+	<title>Personal web page!</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1>I'm a header!</h1>
-	<p> And I'm a paragraph!</p>
-	<p> Also insert a obligatory "Kosti was here comment" here</p>
+	<nav>
+		<ul>
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="contact.html">Contact</a> </li>
+			<li> <a href="survey.html">Survey</a></li>
+			<li> <a href="gallery.html">Gallery</a></li>
+			<li> <a href="news.html">News</a></li>
+			<li> <a href="portfolio.html">Portfolio</a></li>
+			<div id="weather"></div>
+			<div id="time"></div>
+		</ul>
+	</nav>
+	<script src="weatherTime.js"></script>
+
+	<section id="home">
+		<h1>Home</h1>
+		<p>This would be the home menu of this practice website. I would have loved to have made an actual website, but alas, this is all I had the time and creativity for.</p>
+		<p>Feel free to look around, there's a lot of contextless things and stuff to click on and look at.</p>
+		<p>For example...</p>
+		<p style="color: blue;">This is a blue text, using an inline style!</p>
+	</section>
+	<section id="about">
+		<h1>About me</h1>
+		<p>For my brief biography: I'm an aspiring surviving human being.</p>
+		<p>For a longer one, please <a href="contact.html">contact</a> me seperately.</p>
+	</section>
+
 </body>
 </html>

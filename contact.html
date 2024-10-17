@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="contact.html">Contact</a> </li>
+			<li> <a href="survey.html">Survey</a></li>
+			<li> <a href="gallery.html">Gallery</a></li>
+			<li> <a href="news.html">News</a></li>
+			<li> <a href="portfolio.html">Portfolio</a></li>
+			<div id="weather"></div>
+			<div id="time"></div>
+		</ul>
+	</nav>
+	<script src="weatherTime.js"></script>
+    <h1>Contact</h1>
+    <p>If you really need me, you already know where to find me.</p>
+    <p>But if you're really desperate, please fill out the form below:</p>
+    <form action="/submit-contact" method="post">
+        <div class ="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required> <br>
+    </div>
+        <div class ="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <br>
+    </div>
+        <div class ="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea> <br>
+    </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

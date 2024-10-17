@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<nav>
+		<ul>
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="contact.html">Contact</a> </li>
+			<li> <a href="survey.html">Survey</a></li>
+			<li> <a href="gallery.html">Gallery</a></li>
+			<li> <a href="news.html">News</a></li>
+			<li> <a href="portfolio.html">Portfolio</a></li>
+			<div id="weather"></div>
+			<div id="time"></div>
+		</ul>
+	</nav>
+	<script src="weatherTime.js"></script>
+
+<h1>Survey</h1>
+	<form action="/submit-survey" method="post">
+		<div class ="form-group">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+	</div>
+	<div class ="form-group">
+		<p>Age:</p>
+		<select id="age" name="age" required>
+			<option value="" disabled selected>Choose one</option>
+			<option value="under_18">Under 18 years</option>
+			<option value="18-25">18-25 years</option>
+			<option value="over_25">Over 25 years</option>
+		</select>
+	</div>
+		<div class ="form-group">
+		<p> Favourite drink:</p>
+		<input type="radio" id="Coffee" name="favourite_drink" value="Coffee">
+		<label for="Coffee">Coffee</label><br>
+		<input type="radio" id="Tea" name="favourite_drink" value="Tea">
+		<label for="Tea">Tea</label><br>
+		<input type="radio" id="Water" name="favourite_drink" value="Water">
+		<label for="Water">Water</label><br>
+		<div class ="form-group">
+		</div>
+		<p>Languages known:</p>
+		<input type="checkbox" id="finnish" name="languages_known" value="Finnish">
+		<label for="finnish">Finnish</label><br>
+		<input type="checkbox" id="swedish" name="languages_known" value="Swedish">
+		<label for="swedish">Swedish</label><br>
+		<input type="checkbox" id="english" name="languages_known" value="English">
+		<label for="english">English</label><br>
+	</div>
+	<div class ="form-group">
+		<p>Comments:</p>
+		<textarea id="comments" name="comments" row="4" cols="50"></textarea>
+	</div>
+		<button type="submit">Submit</button>
+	</form>
+	<script src="form.js"></script>
+</html>

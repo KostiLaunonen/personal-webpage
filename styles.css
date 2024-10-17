@@ -1,0 +1,192 @@
+/* Desktop style */
+@media (min-width: 769px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        background: #300;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    p {
+        font-size: 16px
+    }
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        background: #300;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    p {
+        font-size: 16px
+    }
+}
+
+h1 {
+    color: #007BFF;
+    /* Blue color for headings */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    background-color: white;
+    /* White background for sections */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery .image {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 500px;
+    height: 500px;
+}
+
+.gallery .image:hover {
+    transform:scale(1.05);
+}
+
+.gallery .image:hover img {
+    transform: scale(1.2);
+}
+
+.gallery .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery .image p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 1; /* Ensure caption is above the image */
+}
+/* News Styles */
+#news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-article {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#loading {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Flex-box styles */
+.form-group {
+    display: 10px;
+    flex-direction: column;
+}
+
+section, form{
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Weather styles */
+#weather, #time {
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+#weather {
+    font-size: 18px;
+}
+
+#time {
+    font-size: 16px;
+}
